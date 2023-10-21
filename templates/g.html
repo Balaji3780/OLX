@@ -1,0 +1,228 @@
+
+
+
+
+                <!DOCTYPE html>
+<html>
+<head>
+    <title>Library Homepage</title>
+    <style>
+        /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background: url("https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HZHnL4R6xj1hrqjd5/videoblocks-6145853d09340610e5dd5140_b3txj-qmk__2858c9b8925e27fea59d6cbecd37e965__P360.mp4");
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #444;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+/* Content sections */
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.books-issue {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.books-issue form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books-issue label {
+    flex: 1 0 100%;
+}
+
+.books-issue input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.books-issue input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.images {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HZHnL4R6xj1hrqjd5/videoblocks-6145853d09340610e5dd5140_b3txj-qmk__2858c9b8925e27fea59d6cbecd37e965__P360.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <header class="header">
+        <h1>Welcome to Our Library</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/frontpage">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/Userdetails"> User Details</a></li>
+            <li><a href="/books">Books</a></li>
+            <li><a href="/logout">Log Out
+                
+            </a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        
+        
+        <div class="container">
+            <h2>Books Issue Form</h2>
+            <form action="/frontpage" method="post" class="form-columns">
+                <div>
+                    <label for="usn">USN:</label>
+                    <input type="text" id="usn" name="USN" required>
+                </div>
+                <div>
+                    <label for="Book-Name">Book Name:</label>
+                    <input type="text" id="Book_Name" name="Book_Name" required>
+                </div>
+                <div>
+                    <label for="issued-date">Issued Date:</label>
+                    <input type="date" id="issued-date" name="Issued_Date" required>
+                </div>
+                <div>
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="Return_Date" required>
+                </div>
+                <div>
+                    <label for="returned-date">Returned Date:</label>
+                    <input type="date" id="returned-date" name="Returned_Date">
+                </div>
+                
+                  <br><br><br>
+                <input type="submit" value="Issue Book">
+            </form>
+        </div>
+     
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Library Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

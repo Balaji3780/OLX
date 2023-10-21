@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Login</title>
+    
+</head>
+<style>
+
+    /* Reset default browser styles */
+body, h1, form {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body {
+      /* Set the background image and its properties */
+      background-image: url('https://omarhraib.com/wp-content/uploads/2022/01/OLX_CS_Hero_Asset_02.gif');
+      background-repeat: repeat;
+      background-size: cover; /* You can adjust this property based on your requirements */
+      background-position: center center;
+      height: 100vh; /* Set the height to fill the viewport */
+      margin: 0; /* Remove default margins to prevent white space */
+      overflow: hidden; /* Hide any overflow content */
+    }
+
+.login-container {
+    display: flex;
+    background-color: #f9f9f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 800px;
+}
+
+.login-content {
+    padding: 40px;
+    flex: 1;
+}
+
+.login-content img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e55300;
+}
+
+.professional-gif {
+    flex: 1;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.professional-gif img {
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <img src="olx.png" alt="OLX Logo">
+            <h1>Welcome to OLX</h1>
+            <form action="/" method="post">
+                <input type="text" id="username" for name="username" placeholder="username" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <button value="submit">Login</button>
+                
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
